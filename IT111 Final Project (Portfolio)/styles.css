@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  
+  body {
+    color: var(--dark);
+    font-family: var(--poppins);
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+    background:linear-gradient(to right, #fdfdfd,#ebedee);
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  .container{
+    width:100%;
+    max-width:150rem;
+    margin:0 auto;
+    padding:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* Header NA */
+.header{
+  background-color:var(--PinakaBG);
+}
+.header__wrapper{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav{
+display: flex;
+gap: 10rem;
+margin-left: 55rem;
+}
+.header__nav li {
+  color: var(--light); 
+  padding: 10px;
+  font-size: 3rem;
+}
+
+
+
+/* BUTTONS */
+
+.header__nav li {
+  position: relative;
+  text-decoration: none;
+  color: var(--light);
+  transition: color 0.3s ease;
+}
+.header__nav li:hover {
+  color: var(--gray);
+}
+.header__nav li:after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gray);
+  transition: width 0.3s ease;
+}
+.header__nav li:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* LEFT AND RIGHT */
+.banner{
+  background-color: var(--PinakaBG);
+}
+.banner__wrapper{
+  display: flex;
+  
+}
+.tryFIXED {
+  position: fixed; /* Fix the element in the viewport */
+  top: 10rem; /* Distance from the top */
+  left: 10rem; /* Distance from the left */
+  z-index: 1000; /* Keep it above other elements */
+  width: 25%; /* Set a width to ensure consistent layout */
+}
+
+.banner__left {
+  margin-left: 25%; /* Adjust this margin to leave space for the fixed `.tryFIXED` */
+}
+
+.banner__right {
+  padding-left: 5rem;
+  padding-top: 10rem;
+  width: 100%; /* Adjust width to fit with `.tryFIXED` */
+}
+
+.taasngban{
+  display: flex;
+  gap: 3rem;
+  color: var(--light);
+  align-items: center;
+  margin-left: 2rem;
+}
+.taasngban i{
+  font-size: 5rem;
+}
+.taasngban h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.clients__personal{
+
+}
+.clients__personal img{
+  width: 40rem;
+  border-radius: 3rem;
+  padding-bottom: 2rem;
+}
+.clients__personal span{
+  color: var(--light);
+  padding-top: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  
+}
+.clients__personal h5{
+  color: var(--gray);
+  
+}
+
+
+/* MAYA */
+.clients__box{
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 3.5rem;
+  background-size: 5%;
+  border-radius: 2rem;
+  color:var(--purple);
+  border: 5px solid var(--VonOutline);
+  background-color: var(--VonBackground);
+}
+  /* position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; */
+ 
+
+
+
+/* .banner__right{
+  padding-left:5rem;
+  padding-top: 10rem;
+  width: 130rem;
+} */
+
+.banner__texts{
+  border-radius: 2rem;
+  color:var(--purple);
+  border: 5px solid var(--VonOutline);
+  background-color: var(--VonBackground);
+  padding: 3rem;
+}
+.banner__right h2{
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  color: var(--light);
+  font-size: 5rem;
+  font-weight: 600;
+}
+.banner__texts p{
+  color: var(--light);
+  font-size: 3.5rem;
+  text-align: justify;
+}
+
+
+
+
+
+.project{
+  background-color: var(--PinakaBG);
+}
+.project__wrapper{
+  display: flex;
+  width: 70rem;
+  justify-content: center;
+  gap: 5rem;
+padding-top: 60rem;
+padding-bottom: 30rem;
+  
+}
+.rightside{
+  padding-left: 48rem;
+}
+.rightside h2{
+  color: var(--light);
+  font-size: 5.5rem;
+  font-weight: 600;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+
+.panggalaw{
+  display: flex;
+  border: 5px solid var(--VonOutline);
+  background-color: var(--VonBackground);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  
+}
+.project__mid img{
+  width: 20rem;
+}
+.project__mid{
+  width: 36rem;
+  outline: transparent;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+.project__mid h4{
+  color: var(--light);
+  font-size: 6rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+
+.project__mid:hover{
+  transform: scale(1.1);
+  color: white;
+}
+.project__mid:hover h4 {
+  color: var(--gray);
+}
+ 
+
+
+
+
+/* PROJECT OUTPUT CODINGS */
+.Code{
+  background-color: var(--PinakaBG);
+}
+.Code__wrapper{
+  padding-top: 30rem;
+  padding-bottom: 15rem;
+}
+.leftside{
+  margin-left: 22%;
+}
+.leftside h2{
+  color: var(--light);
+  font-size: 5.5rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+}
+.Code__Left{
+  display: flex;
+    flex-direction: column; 
+}
+.Code__Left h3{
+  color: var(--light);
+  padding-top: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 5rem;
+}
+.Code__Left i {
+  font-size: 10rem;
+  color: var(--light);
+  padding-bottom: 3rem;
+}
+.Code__Left a {
+  font-size: 3rem;
+  color: var(--light);
+}
+.Moving{
+  display: flex;
+  border: 5px solid var(--VonOutline);
+  background-color: var(--VonBackground);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  gap: 5rem;
+  width: 110rem;
+  
+}
+
+
+
+
+.Code__Left a{
+  padding-bottom: 10rem;
+  font-size: 2rem;
+  
+  color: var(--light);
+    border:5px solid var(--pos);
+    padding: 1.5rem 8rem;
+    align-items: center;
+    
+    border-radius: 1rem;
+    background:var(--VonBackground);
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.Code__Left a:hover{
+  color:var(--gray);
+  background-color: var(--VonBackground);
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/* MY connect */
+.connect{
+  background-color:var(--PinakaBG);
+}
+
+.connect__title{
+  color: var(--light);
+  
+}
+.lamanan{
+  padding-top: 40rem;
+  padding-bottom: 25rem;
+  margin-left: 28%;
+}
+.connect__left h3{
+  font-weight: 600;
+  color: var(--light);
+  font-size: 5rem;
+  padding-bottom: 4rem;
+}
+.connect__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.connect__info {
+  background-color:var(--VonBackground);
+  padding: 3rem 3rem 2rem 3rem;
+  border-radius: 2rem;
+  display: flex;
+  width: 50rem;
+  
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.connect__info i {
+  font-size: 10rem;
+  color: white;
+
+}
+
+
+.connect__info a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  color: var(--light);
+}
+.connect__info p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--light);
+  padding-top: 2rem;
+}
+/* HOVERING EFFECTS */
+.connect__info:hover {
+  transform: scale(1.05);
+  
+}
+.connect__info:hover a{
+  color: var(--gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REPEATABLE PATTERNS */
+:root{
+  --pos:#00589273;
+  --blueviolet:#22203b;
+  --purple:#6151b4;
+  --light:#ffffff;
+  --dark:#2b2b2b;
+  --gray:#bebebe;
+  --darkP:#1b1a2a;
+  --PinakaBG:#080b1c;
+  --VonOutline:#0f1d42;
+  --VonBackground:#0a142a;
+  --poppins:"Poppins", sans-serif;
+}
+.btn{
+  background-color: transparent;
+  border:transparent;
+  border-radius: 3rem;
+  padding:1rem 2rem;
+  color:transparent;
+}
+.btn.bg--border--dark{
+  background-color: var(--light);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
